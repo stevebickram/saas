@@ -15,27 +15,60 @@ html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
+@media only screen and (min-width: 60em) {
+    html { 
+        font-size: 110%;
+    }
+}
 
+@media only screen and (min-width: 90em) {
+    html { 
+        font-size: 120%;
+    }
+}
+@media only screen and (min-width: 120em) {
+    html { 
+        font-size: 130%;
+    }
+}
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.skip-links a {
+    position:absolute;
+    top: -3em;
+    padding: 0.5em 0.75em;
+    background-color:#000;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.skip-links a:focus {
+    top:0;
+}
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-
 .flex {
     display: block;
     width: 100%;
 }
-
 .header-footer { 
     xbackground-color: red;
 }
-
-
+.logo {
+    height: 5em;
+    float:left;
+}
 .slant-header {
     position: relative;
     transform: rotate(5deg);
@@ -45,41 +78,33 @@ body {
     top: -5em;
     left: -10px;   
 }
-
 .slant-header-inside {
     position: relative;
     transform: rotate(-5deg);
     width: 90%;
-    margin: 0 5%;
+    margin: 0 1em;
     top: 3.8rem;
 }
-
 a {
     color: white;
 }
-
 .masthead {
-    text-align: ;
+    padding:none;
 }
-
 .logo {
-    height: 3em;
+    height: 7em;
 }
-
 .nav {
     position: relative;
-    top:-1.5em;
-    padding:0;
+    padding: 1.5em 0;
     margin: 0;
     list-style-type: none;
     text-align: right;
     text-decoration: none;  
 }
-
 .nav a {
     display:block;
 }
-
 .nav a,
 .nav a:link,
 .nav a:visited {
@@ -88,7 +113,6 @@ a {
     text-decoration: none;
     margin: 0 -2em 0 0;
 }
-
 .nav a:hover,
 .nav a:focus,
 .nav a:active,
@@ -97,56 +121,48 @@ a {
 .nav .nav-current:visited {
     color: #fff;
 }
-
-
-
-
-
-
-
-
 .intro-wrap {
     background-color: #333;
     color:white;
     border-style: none;
 }
-
+.sign-up { 
+    text-align: center;
+    text-decoration: none;
+    width: 5em;
+    background-color: red;
+}
 button {
     background-color: #0074D9;
 }
-
 .sign-up {
     margin: 0;
     font-size: 1em;
     font-family: 
 }
-
 section {
     padding-bottom: 5rem;
     position: relative;
     background: #fff none no-repeat center bottom;
     background-size: 100% auto;
-    margin: 0;
-    
+    margin: 0;    
 }
 .section-1 {
     background-image: url("../img/slant-1.svg");
     margin: 0;
+    padding: 5em;
     border: 0;
  }
-
 .section-2 {
     position: relative;
     background: #41A156;
     height: 3em;
 }
-
 .section-3 {
     padding: 9em;
     background-image: url("../img/slant-2.svg");
     position: relative;
 }
-
 .section-4 {
     padding: 1rem;
     width: 100%;
@@ -154,75 +170,74 @@ section {
     background-color: #EB2D00;
     color: #fff;
 }
- .intro {  
-     position: relative;
-     padding: 1rem;
-     width: 20em;
-     background-color: rgba(0,0,0,0.5);
-     color: #fff;
-     margin: 0;
-}
-
-
-
-.info-1 {
-    padding: 1rem;
-    width: 100%;
+.section-5 {
     position: relative;
     background-color: red;
-    color: #fff;
+    margin: none;
+    top:-1em;
 }
-
+ .intro {  
+     position: relative;
+     top: -3em;
+     right: 5em;
+     padding: 1em;
+     width: 22em;
+     background-color: rgba(0,0,0,0.5);
+     color: #fff;
+     margin: 1em;
+}
+.call-action {
+    padding-bottom: none;
+    margin: 0;
+}
+.info-1 {
+    padding: 2rem;
+    width:22em;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    margin: 1em;
+    top: 3em;
+}
 .info-2 {
     padding: 1rem;
-    width: 100%;
+    width:22em;
     position: relative;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
-
 figcaption {
     text-align: center;
 }
 .footer {
     background-color: red;
-    height: 7em;
 }
-
 .nav-footer{
     text-align: right;
-    
-    
-
 }
-
 .nav-footer li {
-    display:inline-block;
-
+    display:block;
 }
-
 .nav-footer a,
 .nav-footer a:link,
 .nav-footer a:visited {
+    position: relative;
     display: block;
     color: black;
     text-decoration: none;
     margin: 0 -1em 0 0;
+    top: -3.7em;    
 } 
-
-
-
-
-
 @media only screen and (min-width: 25em) {
-
 }
 
 @media only screen and (min-width: 38em) {
+.nav {
+      float: right;
+}
 .nav li {
     display: inline-block;
 }
-
 .nav a,
 .nav a:link,
 .nav a:visited {
@@ -231,18 +246,36 @@ figcaption {
     text-decoration: none;
     margin: 0;
 }
-
-.slant-header {
-    top: -4em;
-        transform: rotate(3deg);
+.nav-footer li {
+    display:inline-block;
 }
-.slant-header-inside {
-    top: 3em;
-    transform: rotate(-3deg);
-}
+    .nav-footer a,
+.nav-footer a:link,
+.nav-footer a:visited {
+    position: relative;
+    top: 0; 
 
+} 
+ .intro {  
+     position: relative;
+     top: -5em;
+}
 }
 
 @media only screen and (min-width: 60em) {
-
+.section-1 {
+    background-image: url("../img/slant-1.svg");
+    margin: 0;
+    border: 0;
+    padding: 10em;
+ }
+.section-3 {
+    padding: 15em;
+    background-image: url("../img/slant-2.svg");
+    position: relative;
+}
+ .intro {  
+     position: relative;
+     top: -9em;
+}
 }
