@@ -214,6 +214,7 @@ figcaption {
 }
 .nav-footer{
     text-align: right;
+    margin-bottom: 0;
 }
 .nav-footer li {
     display:block;
@@ -226,7 +227,7 @@ figcaption {
     color: black;
     text-decoration: none;
     margin: 0 -1em 0 0;
-    top: -3.7em;    
+     
 } 
 @media only screen and (min-width: 25em) {
 }
