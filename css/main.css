@@ -185,6 +185,9 @@ figcaption {
     top: -25em;
     text-align: center;
 }
+.function-header {
+    margin: 2em 0 0 0;
+}
 .icon-description {
     text-align: left;
     padding:0 3em;
@@ -376,16 +379,17 @@ textarea {
     height: 60em;
     text-align: center;
 }
-.icon-description {
+.function-header {
+    margin: 0;
+}
+    .icon-description {
     margin: 0 0 5em;
 }
 .package {
-
     border-style: solid;
     border-color:#ccc;
     border-width:0 .1em;
 }
-
 .form-body{
     margin: 0 20%;
 }
