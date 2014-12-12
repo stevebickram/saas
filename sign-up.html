@@ -11,30 +11,29 @@
     <link href="css/type.css" rel="stylesheet">
 </head>
     <body>
-            <header class="masthead grid island">
-                <img src="img/logo.svg" alt="Coach Logo"  class="logo unit unit-s-1 unit-m-1-3">
-                <nav class="nav unit unit-xs-1 unit-m-2-3">
-                    <ul class="mega brand-family unit unit-s-1 unit-m-3-4">
-                        <li><a class=" pad-b" href="index.html">Home</a></li>
-                        <li><a class="pad-b" href="price.html">Price</a></li>
-                        <li><a class="pad-b" href="sign-up.html">Sign In</a></li>
-                    </ul>
-                </nav>
-                <h3 class="contact unit unit-xs-1">1-800-333-3333</h3>
-            </header>
-        <div class="sign-up-banner">
-        <h1 class="sign-up-header yotta">Start Living</h1>
-        </div>
-        
-    <form action="face.html" method="post">
-
-        <div class="form-body island">
-            <div class="sign-up-intro">
-                <h2 class="tera">Sign Up For Your Coach Now </h1>
-                <p class="pad-top"> All we need from you is your contact information and some basic health information. This will help us determine what type of program is right for you and how Your Coach can best help you achieve your goals. <i class="mega">Sign up below!</i></p>
+        <header roll="banner" class="masthead grid">
+            <div class="unit unit-s-1 unit-m-1-3">
+                <img src="images/logo.gif" alt="Coach Logo" class="logo">
             </div>
-
-            <form>
+            <nav id="navigation" role="navigation" class="gutter nav unit unit-s-1 unit-m-2-3">
+                <ul class="mega brand-family unit unit-s-1 unit-m-3-4">
+                    <li><a class="pad-b" href="index.html">Home</a></li>
+                    <li><a class="pad-b" href="price.html">Price</a></li>
+                    <li><a class="pad-b" href="sign-up.html">Sign In</a></li>
+                </ul>
+            </nav>
+            <h3 class="contact gutter unit unit-xs-1">1-800-333-3333</h3>
+        </header>
+    <main id="main" role="main">
+        <div class="sign-up-banner">
+            <h1 class="sign-up-header yotta">Start Living</h1>
+        </div>   
+        <form action="thanks.html" method="post">
+            <div class="form-body island">
+                <div class="sign-up-intro">
+                    <h2 class="tera">Sign Up For Your Coach Now </h1>
+                    <p class="pad-top"> All we need from you is your contact information and some basic health information. This will help us determine what type of program is right for you and how Your Coach can best help you achieve your goals. <i class="mega">Sign up below!</i></p>
+                </div>
                 <div>
                     <label for="name">Name</label>
                     <input class="field" id="name">
@@ -49,7 +48,7 @@
                 </div>  
                 <div class="grid">
                     <fieldset class="input unit unit-xs-1 unit-l-1-3">
-                        <p class="fitness-input-title mega"><i>Your General Activity Level:</i></p>
+                        <p class="fitness-input-title mega">Your General Activity Level:</p>
                         <span class="radio">
                             <input type="radio" id="meh" name="awesomeness">
                             <label class="input-label" for="meh...">None</label>
@@ -66,7 +65,7 @@
                         </span>
                     </fieldset>
                     <fieldset class="input unit unit-xs-1 unit-l-1-3">
-                        <p class="fitness-input-title mega"><i>Nutrition Of Your Diet:</i></p>
+                        <p class="fitness-input-title mega">Nutrition Of Your Diet:</p>
                         <span class="radio">
                             <input type="radio" id="meh" name="awesomeness">
                             <label class="input-label" for="meh...">Poor</label>
@@ -83,7 +82,7 @@
                         </span>
                     </fieldset>
                     <fieldset class="input unit unit-xs-1 unit-l-1-3">
-                        <p class="fitness-input-title mega"><i>What Motivates You:</i></p>
+                        <p class="fitness-input-title mega">What Motivates You:</p>
                         <span class="radio">
                             <input type="radio" id="meh" name="awesomeness">
                             <label class="input-label" for="meh...">Enjoyment</label>
@@ -109,4 +108,20 @@
                 <div class="submit">
                     <button type="submit">Sign Up</button>
                 </div>
-            </form>
+            </div>
+        </form>
+    </main>
+</body>
+<footer class="grid island footer">
+    <div class="unit unit-m-1-2 island-half">
+        <p>©2014 Your Coach</p>
+    </div>   
+        <nav id="navigation" role="navigation" class="foot-nav unit unit-m-1-2">
+            <ul class="brand-family">
+                <li><a class="pad-b" href="index.html">Home</a></li>
+                <li><a class="pad-b" href="price.html">Price</a></li>
+                <li><a class="pad-b" href="sign-up.html">Sign In</a></li>
+            </ul>
+        </nav>
+</footer>
+</html>
