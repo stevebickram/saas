@@ -130,7 +130,7 @@ a {
     display: inline-block;
     background-color: white;
     margin:1em 0 2em 1em;
-    padding: none;
+    padding: 0;
     text-align: right;
 }
 
@@ -142,7 +142,7 @@ a {
     color: black;
 }
 
-.nav: .nav-current:visited{
+.nav-current:visited{
     color:black;
 }
 
@@ -161,7 +161,7 @@ a {
     display: inline-block;
     background-color: white;
     margin:1em 0 2em 1em;
-    padding: none;
+    padding: 0;
     text-align: right;
 }
 
@@ -173,7 +173,7 @@ a {
     color: black;
 }
 
-.foot-nav: .nav-current:visited{
+.nav-current:visited{
     color:black;
 }
 
@@ -318,7 +318,7 @@ figcaption {
     border-style: solid;
     border-color: rgba(228,118,30,.7);
     border-width: 0.2em 0 0 0;
-    border-spacing: 2em 0 0  0;
+    border-spacing: 2em 0 0 0;
     padding: 2em 0 0 0;
 }
 
