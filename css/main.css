@@ -456,6 +456,10 @@ textarea {
     height: 10em;
 }
 
+.fitness-input-title {
+    color: #e19952;
+}
+
 .thanks-person {
     position: relative;
     top:-10em;
