@@ -81,7 +81,7 @@ a {
     
 }
 .nav {
-    padding: 0;
+    padding-left: -3em;
     list-style-type: none;
     overflow: hidden;
     text-align: center;
@@ -92,9 +92,9 @@ a {
     text-decoration: none;
 }
 .nav li {
-    display: block;
+    display: inline-block;
     background-color: white;
-    margin:.5em;
+    margin:1em .5em 2em .5em;
     padding: none;
     text-align: center;
 }
@@ -108,45 +108,35 @@ a {
 .nav: .nav-current:visited{
     color:white;
 }
-
-.nav-2 {
-    padding-left: -1em;
-}
 .contact {
     display: none;
-}
-
-.intro {  
-    padding: 1em;
     position: relative;
-    top: 3em;
-    width: 100%;
-    background-color: rgba(100,50,0,0.5);
+    text-align: right;
+    top:-2em;
+    color: #e19952;
 }
-
+.intro {  
+    position: relative;
+    text-align: left;
+    padding: 8em 0 0 0;
+}
 .intro-element {
     margin: 0;
     height: 1.5em;
 }
-
 .intro-header {
     color: white;
-}
-
-
-.call-action {
-    text-align: center;
-    color: rgba(255,255,255,0.8);
+    text-align: left;
+    color: rgba(255,255,255,1);
     line-height: .1em;
 }
 .sign-up {
     margin: 2em 0 0;
     font-size: 1em;
-    font-family: ;
-    text-align: center;
+    text-decoration: none;
 }
 .background1 {
-    background-image: url("../img/background1.png");
+    background-image: url("../images/background1.png");
     background-size:cover;
     height: 30em;  
     position: relative;
@@ -157,7 +147,7 @@ a {
     position: relative;
     top: 14.5em;
     width: 100%;
-    background-color: rgba(100,50,0,.7);
+    background-color:rgba(213,141,37,.6);
     color: rgba(255,255,255,0.9);
 }
 .info-2 {
@@ -165,8 +155,8 @@ a {
     position: relative;
     top: 14.5em;
     width: 100%;
-    background-color: rgba(100,50,0,.7);
-        color: rgba(255,255,255,0.8);
+    background-color:rgba(213,141,37,.6);
+    color: rgba(255,255,255,0.8);
 
 }
 .background2 {
@@ -174,7 +164,7 @@ a {
     background-size:cover;
     height: 35em;  
     position: relative;
-    top:-15em;
+    top:-16em;
     z-index: 2;
 }
 .background3 {
@@ -193,32 +183,141 @@ figcaption {
     position:relative;
     background-color: white;
     top: -25em;
-    height: 60em;
     text-align: center;
 }
 .icon-description {
     text-align: left;
+    padding:0 3em;
+}
+.package {
+    text-align: center;
+    padding: 0 0 1em 0;
+    display: block;
+}
+.package-sign-up {
+    color: rgba(100,50,0,0.5);
+    text-decoration: none;
+
+}
+.package-register {
+    color: rgba(100,50,0,0.5);
+
 }
 .package-block {
     overflow: hidden;
-    background-color: #e2e2e2;
 }
-.packages {
+.package-intro {
+    padding:1em 0 0 0;
+    background-color:rgba(213,141,37,.1);
+}
+.package-header {
+    margin: 0;
+    color: rgba(228,118,30,.7);
+}
+.package-pricing {
+    color:rgba(0,0,0,.5);
+}
+    
+.package-features {
+    border-style: solid;
+    border-color: rgba(228,118,30,.7);
+    border-width: 0.2em 0 0 0;
+    border-spacing: 2em 0 0  0;
+    padding: 2em 0 0 0;
+}
+.package-feature {
+    list-style-type: none;
+    height: 3em;
+    margin: .3em;
     text-align: center;
+}
+
+.package-feature-2 {
+    list-style-type: none;
+    height: 3em;
+    margin: .3em;
+    text-align: center;
+}
+.package-feature-3 {
+    list-style-type: none;
+    height: 3em;
+    margin: .3em;
+    text-align: center;
+    display: none;
+}
+
+.package-register {
+    text-align: center;
+    padding: 0 0 1em 0;
+}
+.pricing-banner {
+    background-image: url("../images/background5.png"); 
+    background-size:cover;
+    background-position: bottom;
+    position: relative;
+    height: 23em;
+}
+.pricing-header {
+    color: white;
+    position: relative;
+    padding: 2em 0 0 2em;
+}
+.sign-up-banner {
+    background-image: url("../images/background4.png"); 
+    background-size:cover;
+    position: relative;
+    height: 25em;
+}
+.sign-up-intro {
+    text-align: left;
+}
+.sign-up-header {
+    color: white;
+    position: relative;
+    padding: 2em 0 0 2em;
+    top:3em;
+}
+.form-body {
+    position:relative;
+    top:-1em;
+    margin:0 2em;
+}
+.form-input {
+    text-align: left;
+    overflow: hidden;
+}
+.field {
+   width: 100%;
+    margin: 0 0 1.5em;
+}
+.input { 
+    border: none;
+    padding: 2em 1em;
+    display: inline-block;
+    text-align: center;
+    margin:0;
+}
+fieldset {
+    margin: 0 0 3em 0; 
+}
+.input-label {
+    display:inline-block;
+    margin: 0 0 1em;
+}
+.radio { 
+    white-space: nowrap;
+    display:inline-block;
+}
+
+textarea {
+    width: 100%;
+    height: 10em;
 }
 @media only screen and (min-width: 25em) {
 
-
-    .nav li {
-    display: inline-block;
-    background-color: white;
-    margin:.5em;
-    padding: none;
-    text-align: center;
+ 
 }
-
-}
-@media only screen and (min-width: 34em) {
+@media only screen and (min-width: 38em) {
 
 .nav {
     padding: none;
@@ -226,11 +325,15 @@ figcaption {
     overflow: hidden;
     text-align: right;
 }
+
+.contact {
+    display: block;
+}
 .intro {  
     position:relative;
     width: 30em;
     margin: 3em;
-    top: 8em;
+    top: 6em;
 }
 .call-action {
     text-align: left;
@@ -243,7 +346,6 @@ figcaption {
     position:relative;
     top:-5em;
     text-align: right;
-
 }
 .info-1 {
     position: relative;
@@ -268,7 +370,6 @@ figcaption {
     position:relative;
     top:-55em;
 }
-
 .functions { 
     position:relative;
     top: -45em;
@@ -278,14 +379,46 @@ figcaption {
 .icon-description {
     margin: 0 0 5em;
 }
+.package {
+
+    border-style: solid;
+    border-color:#ccc;
+    border-width:0 .1em;
+}
+
+.form-body{
+    margin: 0 20%;
+}
+.pricing-banner {
+    height: 30em;
+}
+.input {
+    padding:1em;
+    display: inline-block;
 }
 @media only screen and (min-width: 60em) {
+.package {
+    border-style: solid;
+    border-color:#ccc;
+    border-width:0 .1em .1em .1em;
+}
+.package-feature-3 {
+    margin:0;
+    display:block;
+}
+.package-feature-2 {
+    display: none;
+}
 
-
-
-
-
-
+.sign-up-banner {
+    background-position:bottom; 
+    position: relative;
+    height: 30em;
+}
+.radio { 
+    display:block;
+}
+}
 
 
 
